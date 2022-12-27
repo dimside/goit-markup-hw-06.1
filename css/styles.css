@@ -810,6 +810,7 @@ img {
 	top: 50%;
 	left: 0;
 	transform: translateY(-50%);
+	pointer-events: none;
 
 	border: 1.25px solid #2e2f42;
 	border-radius: 2px;
