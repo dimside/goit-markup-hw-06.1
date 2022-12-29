@@ -530,7 +530,7 @@ img {
 }
 
 .social-media {
-	margin-right: 80px;
+	margin-right: auto;
 }
 
 .social-media-title,
@@ -574,6 +574,10 @@ img {
 	display: flex;
 }
 
+.subscribe-form-label {
+	margin-right: 24px;
+}
+
 .subscribe-form-input {
 	width: 264px;
 	height: 40px;
@@ -582,7 +586,6 @@ img {
 	border-radius: 4px;
 	padding-left: 16px;
 	padding-right: 10px;
-	margin-right: 24px;
 	outline: none;
 
 	color: var(--accent-text-color);
@@ -665,11 +668,16 @@ img {
 	background-color: #e7e9fc;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	cursor: pointer;
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button:hover,
 .modal-close-button:focus {
 	border: none;
+	background-color: var(--button-click-color);
+	fill: var(--accent-text-color);
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -707,17 +715,28 @@ img {
 	margin-bottom: 8px;
 }
 
+.modal-form-label:last-of-type {
+	margin-bottom: 16px;
+}
+
 .modal-form-inpit-wrap {
+	display: block;
 	position: relative;
 }
 
 .user-policy-wrap {
 	position: relative;
-	margin-bottom: 20px;
+	line-height: 16px;
+	margin-bottom: 22px;
 }
 
 .modal-form-policy-text {
 	padding-left: 24px;
+}
+
+.modal-form-check-label {
+	margin: 0;
+	padding: 0;
 }
 
 .modal-form-policy-text,
@@ -756,6 +775,7 @@ img {
 }
 
 .modal-form-message {
+	display: block;
 	width: 100%;
 	height: 120px;
 	resize: none;
